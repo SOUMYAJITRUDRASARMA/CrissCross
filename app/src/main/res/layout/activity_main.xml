@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="399dp"
+        android:layout_height="399dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/gameImg1"
+                android:layout_width="133dp"
+                android:layout_height="133dp"
+                android:clickable="true"
+                android:onClick="gameImgClicked"
+                android:padding="2dp"
+                app:srcCompat="@drawable/none" />
+
+            <ImageView
+                android:id="@+id/gameImg2"
+                android:layout_width="133dp"
+                android:layout_height="133dp"
+                android:onClick="gameImgClicked"
+                android:clickable="true"
+                android:padding="2dp"
+                app:srcCompat="@drawable/none" />
+
+            <ImageView
+                android:id="@+id/gameImg3"
+                android:layout_width="133dp"
+                android:layout_height="133dp"
+                android:onClick="gameImgClicked"
+                android:clickable="true"
+                android:padding="2dp"
+                app:srcCompat="@drawable/none" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/gameImg4"
+                android:layout_width="133dp"
+                android:layout_height="133dp"
+                android:clickable="true"
+                android:onClick="gameImgClicked"
+                android:padding="2dp"
+                app:srcCompat="@drawable/none" />
+
+            <ImageView
+                android:id="@+id/gameImg5"
+                android:layout_width="133dp"
+                android:layout_height="133dp"
+                android:onClick="gameImgClicked"
+                android:clickable="true"
+                android:padding="2dp"
+                app:srcCompat="@drawable/none" />
+
+            <ImageView
+                android:id="@+id/gameImg6"
+                android:layout_width="133dp"
+                android:layout_height="133dp"
+                android:onClick="gameImgClicked"
+                android:clickable="true"
+                android:padding="2dp"
+                app:srcCompat="@drawable/none" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/gameImg7"
+                android:layout_width="133dp"
+                android:layout_height="133dp"
+                android:clickable="true"
+                android:onClick="gameImgClicked"
+                android:padding="2dp"
+                app:srcCompat="@drawable/none" />
+
+            <ImageView
+                android:id="@+id/gameImg8"
+                android:layout_width="133dp"
+                android:layout_height="133dp"
+                android:clickable="true"
+                android:onClick="gameImgClicked"
+                android:padding="2dp"
+                app:srcCompat="@drawable/none" />
+
+            <ImageView
+                android:id="@+id/gameImg9"
+                android:layout_width="133dp"
+                android:layout_height="133dp"
+                android:clickable="true"
+                android:onClick="gameImgClicked"
+                android:padding="2dp"
+                app:srcCompat="@drawable/none" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="#00897B"
+        android:onClick="resetGame"
+        android:text="reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TextViewStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:clickable="false"
+        android:fontFamily="casual"
+        android:text="Turn of Player 1"
+        android:textAlignment="center"
+        android:textColor="#1E88E5"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonUndo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:onClick="undoGameMove"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962"
+        app:srcCompat="@drawable/undo" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRedo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:onClick="redoGameMove"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962"
+        app:srcCompat="@drawable/redo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
